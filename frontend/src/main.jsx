@@ -42,7 +42,7 @@ const router = createBrowserRouter([
         element: <Customize />
       },
       {
-        path: "admin",
+        path: "adminpanel",
         element: <Admins />
       },
       {
