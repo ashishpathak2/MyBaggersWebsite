@@ -53,11 +53,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<dependency>
-    <groupId>com.railway</groupId>
-    <artifactId>railway-mysql</artifactId>
-    <version>1.0.0</version>
-</dependency>
+	
 
 	<build>
 		<plugins>
