@@ -1,28 +1,10 @@
 {
     "routes": [
-        {
-            "src": "/",
-            "dest": "/Layout"
-        },
-        {
-            "src": "/",
-            "dest": "/Home"
-        },
+   
         {
             "src": "/admin",
-            "dest": "/admins"
-        },
-        {
-            "src": "/admin/view",
-            "dest": "/View"
-        },
-        {
-            "src": "/admin/insert",
-            "dest": "/Insert"
-        },
-        {
-            "src": "/admin/update/:id",
-            "dest": "/Update"
+            "dest": "/"
         }
+       
     ]
 }
