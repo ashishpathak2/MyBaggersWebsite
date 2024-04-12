@@ -11,14 +11,14 @@ function Carousel() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="/src/assets/2.jpg" className="d-block w-100 " alt="..." />
+            <img src="/images/2.jpg" className="d-block w-100 " alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
           <div className="carousel-item">
-            <img src="/src/assets/3.jpg" className="d-block w-100" alt="..." />
+            <img src="/images/3.jpg" className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>

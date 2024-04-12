@@ -33,11 +33,11 @@ function Home() {
         <p> TRENDING CATEGORIES</p>
       </div>
       <div className="tb-container">
-        <TrendingBar Url="/src/assets/trending-category1.jpg" name="Classic T-shirts" />
-        <TrendingBar Url="/src/assets/trending-category2.jpg" name="Classic Shirts" />
-        <TrendingBar Url="/src/assets/trending-category3.jpg" name="Oversized T-shirts" />
-        <TrendingBar Url="/src/assets/trending-category4.jpg" name="Printed T-shirts" />
-        <TrendingBar Url="/src/assets/trending-category5.jpg" name="Jeans" />
+        <TrendingBar Url="/images/trending-category1.jpg" name="Classic T-shirts" />
+        <TrendingBar Url="/images/trending-category2.jpg" name="Classic Shirts" />
+        <TrendingBar Url="/images/trending-category3.jpg" name="Oversized T-shirts" />
+        <TrendingBar Url="/images/trending-category4.jpg" name="Printed T-shirts" />
+        <TrendingBar Url="/images/trending-category5.jpg" name="Jeans" />
       </div>
 
 

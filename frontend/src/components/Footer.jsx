@@ -30,10 +30,10 @@ export default function Footer() {
           <div className='col-5'>
             <div className="payment d-flex gap-2">
               <h6 className='card-title  text-success my-auto'>100% Secure Payment with</h6>
-              <img src="/src/assets/visa-icon.png" alt="" />
-              <img src="/src/assets/master-card-icon.png" alt="" />
-              <img src="/src/assets/rupay-logo-icon.png" alt="" />
-              <img src="/src/assets/upi-icon.png" alt="" />
+              <img src="/images/visa-icon.png" alt="" />
+              <img src="/images/master-card-icon.png" alt="" />
+              <img src="/images/rupay-logo-icon.png" alt="" />
+              <img src="/images/upi-icon.png" alt="" />
             </div>
 
             <div className="d-flex gap-3">
