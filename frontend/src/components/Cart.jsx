@@ -120,7 +120,7 @@ export default function Cart() {
                 <div className="col-lg-9">
 
                     {bagitems && bagitems.map((e, index) => {
-                        TotaldiscountedPrice += e.discount? parseInt(e.discount) : 1 * parseInt(e.quantity)
+                        TotaldiscountedPrice += e.discount? parseInt(e.discount) : 0 * parseInt(e.quantity)
                         totalPrice += parseInt(e.bag_price) * parseInt(e.quantity)
                         return (
                             <div className="card p-3 my-bag-card position-relative mb-3" key={index}>
