@@ -91,6 +91,7 @@ export default function Filter(props) {
     toast.success("Added To Wishlist ")
   }
 
+
   return (
     <div className="container">
       <div className='show-container'>
@@ -116,6 +117,7 @@ export default function Filter(props) {
               <div className="color_inputs d-flex gap-2">
 
                 {/* <ColorBar setColor={setValues} values={values} color={localStorage.getItem('items')} /> */}
+                {localStorage.getItem('items')}
               </div>
             </div>
 
@@ -123,7 +125,9 @@ export default function Filter(props) {
             <div className='sizeSelector'>
               <span>Select Size:</span>
               {/* <SizeBlock setSize={setValues} values={values} size={localStorage.getItem("sizes")} /> */}
+              {localStorage.getItem("sizes")}
             </div>
+
 
 
             <div className="btn-container">
