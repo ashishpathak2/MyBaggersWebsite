@@ -142,7 +142,7 @@ export default function Cart() {
 
                                             <div>
                                                 <div className="price fs-5">
-                                                    {(e.bag_price - e.discount? e.discount : 0) * e.quantity}{rupees} &nbsp;&nbsp;
+                                                    {e.discount ? (e.bag_price - e.discount) * e.quantity : e.bag_price}{rupees} &nbsp;&nbsp;
                                                     {parseInt(e.discount) > 0 &&
                                                         <span className="text-muted text-decoration-line-through fs-6">{e.bag_price * e.quantity}{rupees}</span>
                                                     }
