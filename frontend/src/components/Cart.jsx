@@ -120,7 +120,7 @@ export default function Cart() {
                 <div className="col-lg-9">
 
                     {bagitems && bagitems.map((e, index) => {
-                        TotaldiscountedPrice += parseInt(e.discount) * parseInt(e.quantity)
+                        TotaldiscountedPrice += e.discount? parseInt(e.discount) : 1 * parseInt(e.quantity)
                         totalPrice += parseInt(e.bag_price) * parseInt(e.quantity)
                         return (
                             <div className="card p-3 my-bag-card position-relative mb-3" key={index}>
@@ -142,13 +142,13 @@ export default function Cart() {
 
                                             <div>
                                                 <div className="price fs-5">
-                                                    {(e.bag_price - e.discount) * e.quantity}{rupees} &nbsp;&nbsp;
+                                                    {(e.bag_price - e.discount? e.discount : 0) * e.quantity}{rupees} &nbsp;&nbsp;
                                                     {parseInt(e.discount) > 0 &&
                                                         <span className="text-muted text-decoration-line-through fs-6">{e.bag_price * e.quantity}{rupees}</span>
                                                     }
                                                 </div>
                                                 {parseInt(e.discount) > 0 &&
-                                                    <div className="text-success">You saved this much {e.discount * e.quantity}{rupees}</div>
+                                                    <div className="text-success">You saved this much {e.discount? e.discount : 1 * e.quantity}{rupees}</div>
                                                 }
                                             </div>
 
