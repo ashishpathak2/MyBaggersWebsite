@@ -116,16 +116,15 @@ export default function Filter(props) {
               <p>Color Option:</p>
               <div className="color_inputs d-flex gap-2">
 
-                {/* <ColorBar setColor={setValues} values={values} color={localStorage.getItem('items')} /> */}
-                {localStorage.getItem('items')}
+                <ColorBar setColor={setValues} values={values} color={localStorage.getItem('items')} />
+               
               </div>
             </div>
 
 
             <div className='sizeSelector'>
               <span>Select Size:</span>
-              {/* <SizeBlock setSize={setValues} values={values} size={localStorage.getItem("sizes")} /> */}
-              {localStorage.getItem("sizes")}
+              <SizeBlock setSize={setValues} values={values} size={localStorage.getItem("sizes")} />
             </div>
 
 
