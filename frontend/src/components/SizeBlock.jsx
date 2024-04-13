@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 
 function SizeBlock({ size, setSize, values }) {
-  const sizeSplit = size.split(",");
+  const sizeSplit = size.includes(",") ? size.split(",") : [size];
 
   const inputSize = (e) => {
     setSize({ ...values, "size": e.target.value })

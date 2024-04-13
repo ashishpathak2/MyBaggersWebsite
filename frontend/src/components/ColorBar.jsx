@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
 function ColorBar({ color, setColor, values }) {
-  const colorSplit = color.split(",");
+
+  const colorSplit = color.includes(",") ? color.split(",") : [color];
 
   const inputColor = (e) => {
     setColor({ ...values, "color": e.target.value })
